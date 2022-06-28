@@ -1,0 +1,50 @@
+/*--Estilo da Página--*/
+
+body{
+    font-family: Quicksand;
+    margin-left: 15%;
+    margin-right: 15%;
+    background-color: rgb(32, 32, 32);
+}
+
+.container{
+    background-color: white;
+    padding: 5%;
+}
+
+.imagem{
+    width: 150px;
+margin: auto;  
+  display: block;
+}
+
+.cabecalho{
+    text-align: center;
+}
+
+li{
+    list-style: none;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    background-color: #8bbd87;
+}
+
+   
+pre{
+    max-width: 400px;
+    color:aliceblue;
+    background-color: #0f0f0f;
+    border-left: 2px solid #789876;
+}
+
+h5{
+    color:rgb(177, 41, 120);
+    font-size: 15px;
+}
+
+p{
+    font-size: 15px;   
+}

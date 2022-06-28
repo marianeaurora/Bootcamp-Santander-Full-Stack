@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Flexbox</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="flex.css">
+    
+</head>
+<body>
+    <div class="container">
+
+        <header class="cabecalho">
+            <p>
+            <img src="/Santander-Bootcamp.png" alt="Santander Bootcamp 2022 - Jornada Fullstack" class="imagem" >
+        
+
+            <h1 id="title">Jornada Fullstack - CSS Flexbox</h1></header>
+            </p>
+        </header>
+  
+    <h4>1. Flexbox</h4>
+    <p>O Flex Container é a tag que envolve os itens flex, ao indicar display: flex, essa tag passa a ser um Flex Container. 
+
+    <h5>display: flex;</h5>
+        <p>
+        Torna o elemento um flex container automaticamente transformando todos os seus filhos diretos em flex itens. Aqui temos um exemplo de <code>display:flex</code></p>
+
+    <div class="flex">
+        
+        <div class="item">Item1</div>
+        <div class="item">Item2</div>
+        <div class="item">Item3</div>
+        
+    </div>
+
+
+    <code><pre>
+
+        .flex{
+            display:flex;
+        }
+        
+        .item{
+            color:white;
+            background-color: blueviolet;
+            margin:10px;
+            padding: 10px;
+        }
+    </code></pre>
+
+    <h4>2. Flex-direction</h4>
+    <p>Define a direção dos flex itens. Por padrão ele é row (linha), por isso quando o display: flex; é adicionado, os elementos ficam em linha, um do lado do outro.
+
+    A mudança de row para column geralmente acontece quando estamos definindo os estilos em media queries para o mobile. Assim você garante que o conteúdo seja apresentado em coluna única.</p>
+
+    <h5>flex-direction:row;</h5>
+    <ul class="flex row">
+        <li class="item-list">1</li>
+        <li class="item-list">2</li>
+        <li class="item-list">3</li>
+        <li class="item-list">4</li>
+        <li class="item-list">5</li>
+    </ul>
+
+    <code><pre>
+
+    .row{
+    flex-direction: row;
+    }
+
+</pre></code>
+
+<h5>flex-direction:row-reverse;</h5>
+    <ul class="flex row-reverse">
+        <li class="item-list">1</li>
+        <li class="item-list">2</li>
+        <li class="item-list">3</li>
+        <li class="item-list">4</li>
+        <li class="item-list">5</li>
+    </ul>
+
+    <code><pre>
+
+    .row-reverse{
+
+    flex-direction: row-reverse;
+    }
+
+</pre></code>
+
+<h5>flex-direction:column;</h5>
+    <ul class="flex column">
+        <li class="item-list">1</li>
+        <li class="item-list">2</li>
+        <li class="item-list">3</li>
+        <li class="item-list">4</li>
+        <li class="item-list">5</li>
+    </ul>
+
+    <code><pre>
+
+    .column{
+   
+    flex-direction: column;
+    }
+
+</pre></code>
+
+<h5>flex-direction:column-reverse;</h5>
+    <ul class="flex column-reverse">
+        <li class="item-list">1</li>
+        <li class="item-list">2</li>
+        <li class="item-list">3</li>
+        <li class="item-list">4</li>
+        <li class="item-list">5</li>
+    </ul>
+
+    <code><pre>
+
+    .reverse{
+   
+    flex-direction: column-reverse;
+    }
+
+</pre></code>
+
+<h4>3. Flex-wrap</h4>
+<p>A propriedade CSS flex-wrap define se os itens flexíveis são forçados a ficarem na mesma linha ou se podem ser quebradas em varias linhas. Se o argumento for valido, ele define a direção em que as linhas são empilhadas.</p>
+
+<h5>flex-wrap: nowrap;</h5>
+
+<div class="flex-nowrap">
+    <div class="wrap-item">1</div>
+    <div class="wrap-item">2</div>
+    <div class="wrap-item">3</div>
+    <div class="wrap-item">4</div>
+    <div class="wrap-item">5</div>
+    <div class="wrap-item">6</div>
+</div>
+
+<h5>flex-wrap: wrap;</h5>
+
+<div class="flex-wrap">
+    <div class="wrap-item">1</div>
+    <div class="wrap-item">2</div>
+    <div class="wrap-item">3</div>
+    <div class="wrap-item">4</div>
+    <div class="wrap-item">5</div>
+    <div class="wrap-item">6</div>
+</div>
+
+</body>
+</div>
+</html>
