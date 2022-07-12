@@ -42,22 +42,6 @@
     margin: 5px;
 }
 /*------Flex wrap-----*/
-
-.flex-nowrap{
-    display: flex;
-    background-color: #8bbd87;
-    height: 150px;
-    max-width: 50%;
-    flex-wrap: nowrap;
-}
-.flex-wrap{
-    display: flex;
-    background-color: #8bbd87;
-    height: 60%;
-    max-width: 50%;
-    flex-wrap: wrap;
-}
-
 .wrap-item{
     font-size:24px;
     height: 50%;
@@ -68,3 +52,69 @@
     background-color: blueviolet;
 }
 
+.flex-nowrap{
+    display: flex;
+    background-color: #8bbd87;
+    height: 60%;
+    max-width: 40%;
+    flex-wrap: nowrap;
+}
+.flex-wrap{
+    display: flex;
+    background-color: #8bbd87;
+    height: 60%;
+    max-width: 40%;
+    flex-wrap: wrap;
+}
+
+.flex-wrap-reverse{
+    display: flex;
+    background-color: #8bbd87;
+    height: 60%;
+    max-width: 40%;
+    flex-wrap:wrap-reverse;
+}
+/*------Flex Flow-----*/
+.flex-flow{
+    display: flex;
+    max-width: 500px;
+    background-color: #8bbd87;
+}
+.default{
+    flex-flow: row nowrap;
+}
+
+.flow-wrap{
+    flex-flow: row wrap;
+}
+.flow-wrap-reverse{
+    flex-flow: row wrap-reverse;
+}
+
+.flow-item{
+    background-color: blueviolet;
+    margin: 5px;
+    color: black;
+    text-align: center;
+    line-height: 50px;
+    height: 50px;
+    width: 100px;
+}
+
+/*------Flex Start-----*/
+
+.flex-start{
+    justify-content: flex-start;
+}
+.flex-end{
+    justify-content: flex-end;
+}
+.center{
+    justify-content: center;
+}
+.space-between{
+    justify-content: space-between;
+}
+.space-around{
+    justify-content: space-around;
+}
